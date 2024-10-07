@@ -17,16 +17,19 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.award__hidden{
+  width: 250px;
+}
+.award__img{
+  padding-right: 100px;
 }
 
 .award__text {
-  padding: 12px 520px;
+  padding: 12px 0;
   color: #4B5563;
-
-
-}
-.award__close {
 }
 
 .header {
@@ -38,8 +41,6 @@ body {
 }
 .useless{
   width: 250px;
-}
-.header__links {
 }
 .header__link {
   text-decoration: none;
@@ -129,9 +130,6 @@ body {
   border-radius: 8px;
   margin-right: 13px;
   border: none;
-}
-.content__wrapper{
- 
 }
 
 .content__reviews{
@@ -420,9 +418,6 @@ body {
 .student__photo{
   width: 50%;
 }
-.student__img {
-}
-
 .student__cards {
   display: flex;
   align-items: center;
