@@ -481,3 +481,52 @@ body {
 }
 /* best end */
 
+/* teachers start */
+.teachers {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.teachers__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+.teachers__card {
+  width: 240px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.teachers__img {
+  width: 48px;
+  height: 48px;
+}
+.teachers__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+.teachers__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #4B5563;
+}
+
+.teachers__photo{
+  margin: 0 100px;
+}
+.teachers__btn{
+  padding: 13px 25px;
+  background-color: #1F2937;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 80px;
+  
+}
+/* teachers end */
+
