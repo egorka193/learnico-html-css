@@ -10,21 +10,17 @@ body {
   /* font-family: "Poppins", sans-serif; */
 }
 .container{
-  background-color: #00353B;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .award{
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.award__hidden{
-  width: 250px;
+  position: relative;
 }
 .award__img{
-  padding-right: 100px;
+  position: absolute;
+  right: 210px;
 }
 
 .award__text {
@@ -32,12 +28,21 @@ body {
   color: #4B5563;
 }
 
-.header {
-  background-color: #00353B;
+.award__wrap{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+}
+
+.header {
+  background-color: #00353B;
   height: 72px;
+}
+.header__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .useless{
   width: 250px;
@@ -91,8 +96,6 @@ body {
 /* award end */
 
 .content {
-  display: flex;
-  justify-content: space-between;
   margin: 50px 80px 80px 80px;
   background-color: #00353B;
   color: white;
@@ -131,6 +134,13 @@ body {
   margin-right: 13px;
   border: none;
 }
+.content__wrapper{
+  width: 600px;
+}
+.content__container{
+  display: flex;
+  justify-content: space-between;
+}
 
 .content__reviews{
   display: flex;
@@ -152,6 +162,7 @@ body {
 }
 .content__video{
   position: relative;
+  max-width: 600px;
 }
 .content__video__img{
   position: absolute;
@@ -165,21 +176,29 @@ body {
   line-height: 26px;
   text-align: center;
   margin-bottom: 410px;
+  margin-top: 80px;
 }
 
 /* content end */
 
 /* about start */
 .about {
+  height: 80px;
+  position: relative;
+}
+.about__container{
   position: absolute;
-  top: -12%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #FCD8CA;
-  margin: 0 80px;
   border-radius: 24px;
+  z-index: 1;
+  
 }
 .about__content {
   text-align: center;
-  padding: 64px 390px;
+  padding: 64px 350px;
 }
 .about__btn1 {
   padding: 8px 12px;
@@ -226,8 +245,9 @@ body {
 .premium__card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 400px 80px 128px 80px;
+  justify-content: space-between;
+  padding-top: 400px;
+  padding-bottom: 128px;
 }
 
 .premium__card2{
@@ -449,6 +469,9 @@ body {
 .best {
   padding-top: 190px;
   background-color: white;
+}
+
+.best__wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -514,7 +537,7 @@ body {
 .teachers__photo{
   margin: 0 100px;
 }
-.teachers__btn{
+.btn{
   padding: 13px 25px;
   background-color: #1F2937;
   color: white;
@@ -522,6 +545,11 @@ body {
   border-radius: 8px;
   margin-top: 80px;
   
+}
+.btn__wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 /* teachers end */
 
