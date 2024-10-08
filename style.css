@@ -5,26 +5,22 @@
 }
 
 body {
-  background-color: #00353B;
+  background-color: white;
   font-family: "DM Sans", sans-serif;
   /* font-family: "Poppins", sans-serif; */
 }
 .container{
-  background-color: #00353B;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .award{
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.award__hidden{
-  width: 250px;
+  
 }
 .award__img{
-  padding-right: 100px;
+  position: absolute;
+  right: 0;
 }
 
 .award__text {
@@ -32,15 +28,25 @@ body {
   color: #4B5563;
 }
 
-.header {
-  background-color: #00353B;
+.award__wrap{
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+}
+
+.header {
+  background-color: #00353B;
   height: 72px;
 }
-.useless{
-  width: 250px;
+.header__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__useless{
+  width: 280px;
 }
 .header__link {
   text-decoration: none;
@@ -91,9 +97,7 @@ body {
 /* award end */
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 80px 80px 80px;
+  padding: 50px 0 ;
   background-color: #00353B;
   color: white;
 }
@@ -131,6 +135,21 @@ body {
   margin-right: 13px;
   border: none;
 }
+.content__btn1{
+  background-color: #00353B;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content__container{
+  display: flex;
+  justify-content: space-between;
+}
 
 .content__reviews{
   display: flex;
@@ -152,6 +171,7 @@ body {
 }
 .content__video{
   position: relative;
+  max-width: 600px;
 }
 .content__video__img{
   position: absolute;
@@ -164,22 +184,25 @@ body {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 410px;
+  margin-top: 80px;
+  padding-bottom: 400px;
 }
 
 /* content end */
 
 /* about start */
 .about {
-  position: absolute;
-  top: -12%;
+  position: relative;
+  transform: translate(0%, -50%);
+  z-index: 1;
+}
+.about__container{
   background-color: #FCD8CA;
-  margin: 0 80px;
   border-radius: 24px;
 }
 .about__content {
   text-align: center;
-  padding: 64px 390px;
+  padding: 64px 350px;
 }
 .about__btn1 {
   padding: 8px 12px;
@@ -222,19 +245,20 @@ body {
 .premium {
   position: relative;;
   background-color: white;
+  padding-top: 0px;
 }
 .premium__card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 400px 80px 128px 80px;
+  justify-content: space-between;
+  margin-bottom: 128px;
 }
 
-.premium__card2{
-  padding-top: 0;
+.premium__card:nth-child(even){
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 .premium__content {
   width: 576px;
   height: 309px;
@@ -313,6 +337,7 @@ body {
   background-color: #00353B;
   overflow: hidden;
   border-radius: 16px;
+  padding: 20px 28px;
 }
 .card__link {
   background-color: white;
@@ -334,8 +359,8 @@ body {
 }
 .card__btn {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 10px;
+  left: 10px;
   padding: 9px 21px;
   background-color: #22A45A;
   color: white;
@@ -355,30 +380,26 @@ body {
   border-radius: 100%;
 }
 
-.card__wrapper{
-  padding-top: 32px;
-  padding-left: 24px;
-}
+
 /* popular end */
 
 /* stident start */
 .student {
   background-color: white;
-  padding: 128px 71px 0px 89px;
+  padding: 128px 0px ;
 }
 .student__content {
   background-color: #FCD8CA;
-  height: 545px;
+  height: 539px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding-top: 64px;
-  padding-left: 64px;
-  border-radius: 10px;
+  padding: 64px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .student__wrapper {
-  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,11 +438,12 @@ body {
 
 .student__photo{
   width: 50%;
+  font-size: 0;
 }
 .student__cards {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .student__card h3{
   font-size: 24px;
@@ -447,8 +469,11 @@ body {
 
 /* best start */
 .best {
-  padding-top: 190px;
+  padding-top: 80px;
   background-color: white;
+}
+
+.best__wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,12 +513,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  margin-top: 80px;
 }
 .teachers__card {
   width: 240px;
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .teachers__img {
   width: 48px;
@@ -514,14 +539,23 @@ body {
 .teachers__photo{
   margin: 0 100px;
 }
-.teachers__btn{
+.teacher__button{
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.teacher__button button{
   padding: 13px 25px;
   background-color: #1F2937;
   color: white;
   border: none;
   border-radius: 8px;
-  margin-top: 80px;
-  
+ 
+}
+.teacher__button div{
+ 
 }
 /* teachers end */
 
