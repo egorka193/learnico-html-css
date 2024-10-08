@@ -251,7 +251,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 128px;
+  margin-bottom: 128px;
 }
 
 .premium__card:nth-child(even){
@@ -400,7 +400,6 @@ body {
   border-bottom-left-radius: 10px;
 }
 .student__wrapper {
-  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -544,14 +543,14 @@ body {
   margin-top: 80px;
 }
 
-.teacher_btn{
+.teacher__btn{
   padding: 13px 25px;
   background-color: #1F2937;
   color: white;
   border: none;
   border-radius: 8px;
 }
-.btn__wrap{
+.teacher__button div{
   display: flex;
   align-items: center;
   justify-content: space-around;
