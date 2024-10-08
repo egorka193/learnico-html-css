@@ -541,19 +541,21 @@ body {
 }
 .teacher__button{
   margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.teacher__btn{
+.teacher__button button{
   padding: 13px 25px;
   background-color: #1F2937;
   color: white;
   border: none;
   border-radius: 8px;
+ 
 }
 .teacher__button div{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+ 
 }
 /* teachers end */
 
