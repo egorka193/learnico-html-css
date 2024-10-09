@@ -544,6 +544,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 128px;
 }
 
 .teacher__button button{
@@ -554,8 +555,97 @@ body {
   border-radius: 8px;
  
 }
-.teacher__button div{
- 
-}
 /* teachers end */
+
+/* say start */
+.say {
+  
+}
+.container {
+}
+
+.say__container{
+  background-color: #FCD8CA;
+  padding-top: 96px;
+  margin-bottom: 128px;
+}
+.say__content {
+  text-align: center;
+}
+.say__link {
+  background-color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  color: #1F2937;
+  border-radius: 5px;
+}
+.say__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+.say__text {
+  max-width: 730px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4B5563;
+  margin-bottom: 79px;
+}
+.say__cards {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 96px;
+  overflow: scroll;
+  scrollbar-color: #00353B;
+}
+.say__card {
+  background-color: white;
+  min-width: 400px;
+  height: 328px;
+  padding: 32px;
+  border-radius: 16px;
+}
+.say__card p{
+  margin-bottom: 55px;
+  font-size: 17px;
+  color: #1F2937;
+}
+.say__card-review{
+  display: flex;
+  gap: 15px;
+}
+.say__stars {
+  margin-bottom: 33px;
+}
+
+.say__card-human span{
+  font-size: 16px;
+  color: #111827;
+}
+.say__card-human p{
+  color: #6B7280;
+}
+/* say end */
+
+/* posts start */
+.posts {
+}
+.container {
+}
+.posts__latest {
+}
+.posts__text {
+  background-color: #FCD8CA;
+  padding: 4px 8px;
+}
+.posts__title {
+}
+.posts__btn {
+  text-align: right;
+}
+/* posts end */
 
