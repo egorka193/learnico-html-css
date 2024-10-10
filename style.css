@@ -544,6 +544,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 500px;
 }
 
 .teacher__button button{
@@ -552,10 +553,207 @@ body {
   color: white;
   border: none;
   border-radius: 8px;
- 
-}
-.teacher__button div{
+  cursor: pointer;
  
 }
 /* teachers end */
 
+/* reviews start */
+.reviews {
+  background-color: #00353B;
+}
+.reviews__container{
+  transform: translateY(-50%);
+  background-color: #FCD8CA;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.reviews__content {
+  text-align: center;
+  padding-top: 96px;
+}
+.reviews__link {
+  display: inline-block;
+  background-color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  color: #1F2937;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reviews__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+.reviews__text {
+  max-width: 730px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4B5563;
+  margin-bottom: 79px;
+}
+.reviews__cards {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 96px;
+  overflow-x: scroll;
+  scrollbar-color: #00353B;
+}
+.reviews__card {
+  background-color: white;
+  min-width: 400px;
+  height: 328px;
+  padding: 32px;
+  border-radius: 16px;
+}
+.reviews__card-text{
+  margin-bottom: 55px;
+  font-size: 17px;
+  color: #1F2937;
+}
+.reviews__card-information{
+  display: flex;
+  gap: 15px;
+}
+
+.reviews__card-photo{
+  width: 48px;
+  height: 48px;
+}
+.reviews__stars {
+  margin-bottom: 33px;
+}
+
+.reviews__card-human span{
+  font-size: 16px;
+  color: #111827;
+}
+.reviews__card-human p{
+  color: #6B7280;
+}
+/* reviews end */
+
+/* posts start */
+.posts {
+  background-color: #00353B;
+  margin-top: -250px;
+}
+.posts__top {
+  display: flex;
+  justify-content: space-between;
+}
+.posts__text {
+  background-color: #FCD8CA;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.posts__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40px;
+  color: white;
+  margin-top: 10px;
+}
+.posts__btn {
+  background-color: white;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.posts__cards {
+  display: flex;
+  gap: 33px;
+  margin-top: 80px;
+}
+.post__card {
+  background-color: white;
+  width: 35%;
+  height: 605px;
+}
+.post__card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.post__card-span1 {
+  background-color: #AADEA8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: auto;
+}
+.post__card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 10px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.post__card-text {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 24px;
+}
+.post__card-span2 {
+  text-decoration: none;
+  color: #111827;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+/* posts end */
+
+/* today start */
+.start-today {
+  padding-top: 123px;
+  background-color: #00353B;
+  text-align: center;
+}
+.start-today__title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 28px;
+}
+.start-today__text {
+  color: white;
+  font-size: 18px;
+  max-width: 730px;
+  margin: 0 auto;
+}
+.start-today__buttons {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.start-today__btn1 {
+  font-size: 16px;
+  background-color: #22A45A;
+  color: white;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+}
+.start-today__btn2 {
+  font-size: 16px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+}
+/* today end */
