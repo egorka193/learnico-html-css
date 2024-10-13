@@ -765,8 +765,8 @@ body {
   padding-top: 150px;
 }
 .footer__container{
-  width: 1280px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.083) ;
+  padding-bottom: 77px;
 }
 .footer__text-above {
   color: white;
@@ -825,7 +825,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 77px;
+ 
 }
 
 /* footer end */
@@ -834,6 +834,7 @@ body {
 .copyright {
   background-color: #00353B;
   padding-top: 32px;
+  padding-bottom: 28px;
 }
 
 .copyright__wrapper {
@@ -846,5 +847,8 @@ body {
 }
 .copyright__images img{
   padding-right: 4px;
+}
+.copyright__images{
+  font-size: 0px;
 }
 /* Copyright end */
