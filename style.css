@@ -670,15 +670,21 @@ body {
 }
 .posts__cards {
   display: flex;
-  gap: 33px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-top: 80px;
 }
 .post__card {
   background-color: white;
-  width: 35%;
-  height: 605px;
+  max-width: 405px;;
+}
+.post__card img{
+  width: 100%;
 }
 .post__card-content {
+  
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -879,6 +885,15 @@ body {
   .teacher__button{
     margin-top: 0px;
   }
+  .posts__top{
+    display: block;
+    text-align: center;
+  }
+  .posts__text{
+    display: flex;
+    justify-content: center;
+    margin: 0 210px;
+  }
 }
 @media(max-width: 1200px){
   .content__container{
@@ -919,6 +934,12 @@ body {
   .award__img{
     margin-right: 15px;
   }
+  .footer__wrapper{
+    flex-wrap: wrap;
+  }
+  .footer__content{
+    margin-bottom: 50px;
+  }
   
 }
 
@@ -936,7 +957,6 @@ body {
     width: 12px;
     height: 12px;
   }
-  
 }
 
 @media(max-width: 600px){
@@ -1002,6 +1022,20 @@ body {
   .reviews__text{
     font-size: 14px;
     line-height: 20px;
+  }
+  .posts__text{
+    display: flex;
+    justify-content: center;
+    margin: 0 70px;
+  }
+  .footer__menu{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer{
+    padding-top: 50px;
+  }
+  .copyright__wrapper{
+    flex-wrap: wrap;
   }
 }
 
@@ -1075,6 +1109,29 @@ body {
   .card__title{
     font-size: 18px;
   }
+  .post__card{
+    width: 100%;
+  }
+  .posts__title{
+    font-size: 36px;
+  }
+  .posts__btn{
+    padding: 9px 18px;
+  }
+  .start-today__title{
+    font-size: 25px;
+  }
+  .start-today__text{
+    font-size: 12px;
+  }
+  .start-today__btn1{
+    font-size: 12px;
+    padding: 9px 18px;
+  }
+  .start-today__btn2{
+    font-size: 12px;
+    padding: 9px 18px;
+  }
 }
 
 @media(max-width: 400px){
@@ -1083,6 +1140,13 @@ body {
    position: relative;
    margin-top: 15px;
    margin-left: -12px;
+  }
+  .post__card-title{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .copyright__text{
+    font-size: 12px;
   }
 }
 /* media end */
