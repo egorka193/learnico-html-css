@@ -46,9 +46,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.header__useless{
-  width: 280px;
+.header__wrapper::before{
+  content: "";
+  width: 287px;
 }
+
 .header__link {
   text-decoration: none;
   color: white;
@@ -304,6 +306,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .popular__btn {
   background-color: #FCD8CA;
@@ -421,13 +424,13 @@ body {
   font-weight: 400;
   font-size: 48px;
   color: #1F2937;
-  width: 468px;
+  max-width: 468px;
   margin-bottom: 28px;
 }
 .student__text {
   font-size: 18px;
   color: #374151;
-  width: 480px;
+  max-width: 480px;
   margin-bottom: 39px;
 }
 .student__btn {
@@ -458,14 +461,14 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #4B5563;
-  width: 378px;
+  max-width: 378px;
   margin-bottom: 20px;
 }
 .student__card img{
   margin-bottom: 32px;
 }
 .student__card {
-  width: 395px;
+  max-width: 395px;
   margin-top: 80px;
 }
 /* stident start */
@@ -480,6 +483,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .best__btn {
   border: none;
@@ -505,13 +509,6 @@ body {
 /* best end */
 
 /* teachers start */
-.teachers {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .teachers__wrapper{
   display: flex;
   align-items: center;
@@ -673,15 +670,21 @@ body {
 }
 .posts__cards {
   display: flex;
-  gap: 33px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-top: 80px;
 }
 .post__card {
   background-color: white;
-  width: 35%;
-  height: 605px;
+  max-width: 405px;;
+}
+.post__card img{
+  width: 100%;
 }
 .post__card-content {
+  
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -859,6 +862,39 @@ body {
 /* media start */
 
 
+@media(max-width: 1280px){
+  .student__wrapper{
+    flex-direction: column;
+  }
+  .student__cards{
+    flex-direction: column;
+    text-align: center;
+  }
+  .student__photo{
+    display: none;
+  }
+  .student__content{
+    width: auto;
+  }
+  .teachers__wrapper{
+    flex-direction: column;
+  }
+  .teachers__photo{
+    margin-bottom: 10px;
+  }
+  .teacher__button{
+    margin-top: 0px;
+  }
+  .posts__top{
+    display: block;
+    text-align: center;
+  }
+  .posts__text{
+    display: flex;
+    justify-content: center;
+    margin: 0 210px;
+  }
+}
 @media(max-width: 1200px){
   .content__container{
     flex-direction: column;
@@ -886,6 +922,9 @@ body {
   .container{
     padding: 0 15px;
   }
+  .popular__cards{
+    flex-wrap: wrap;
+  }
 
 }
 @media(max-width: 1020px){
@@ -894,6 +933,12 @@ body {
   }
   .award__img{
     margin-right: 15px;
+  }
+  .footer__wrapper{
+    flex-wrap: wrap;
+  }
+  .footer__content{
+    margin-bottom: 50px;
   }
   
 }
@@ -921,6 +966,76 @@ body {
   .about__btn2{
     padding: 8px 16px;
     font-size: 14px;
+  }
+  .student{
+    padding: 60px 0px;
+  }
+  .student__content{
+    height: auto;
+    padding: 20px;
+  }
+  .student__title{
+    font-size: 20px;
+  }
+  .student__text{
+    font-size: 12px;
+  }
+  .student__link{
+    font-size: 10px;
+    padding: 4px 7px;
+    width: 47px;
+  }
+  .student__btn{
+    width: 90px;
+    padding: 10px 0px;
+    font-size: 12px;
+  }
+  .student__card h3{
+    font-size: 18px;
+  }
+  .student__card p{
+    font-size: 12px;
+  }
+  .best{
+    padding-top: 0px;
+  }
+  .best__title{
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .best__text{
+    font-size: 15px;
+  }
+  .teachers__photo{
+    width: 100%;
+  }
+  .teachers__title{
+    font-size: 18px;
+  }
+  .teachers__text{
+    font-size: 13px;
+  }
+  .reviews__title{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .reviews__text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .posts__text{
+    display: flex;
+    justify-content: center;
+    margin: 0 70px;
+  }
+  .footer__menu{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer{
+    padding-top: 50px;
+  }
+  .copyright__wrapper{
+    flex-wrap: wrap;
   }
 }
 
@@ -983,6 +1098,55 @@ body {
   .premium__card{
     margin-bottom: 30px;
     margin-top: -100px;
+  }
+  .popular__title{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .popular__text{
+    font-size: 12px;
+  }
+  .card__title{
+    font-size: 18px;
+  }
+  .post__card{
+    width: 100%;
+  }
+  .posts__title{
+    font-size: 36px;
+  }
+  .posts__btn{
+    padding: 9px 18px;
+  }
+  .start-today__title{
+    font-size: 25px;
+  }
+  .start-today__text{
+    font-size: 12px;
+  }
+  .start-today__btn1{
+    font-size: 12px;
+    padding: 9px 18px;
+  }
+  .start-today__btn2{
+    font-size: 12px;
+    padding: 9px 18px;
+  }
+}
+
+@media(max-width: 400px){
+  .card__btn{
+   position: relative;
+   position: relative;
+   margin-top: 15px;
+   margin-left: -12px;
+  }
+  .post__card-title{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .copyright__text{
+    font-size: 12px;
   }
 }
 /* media end */
